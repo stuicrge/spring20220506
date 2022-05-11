@@ -2,6 +2,7 @@ package org.zerock.controller.ex07;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -15,7 +16,7 @@ public class Ex11Controller {
 		System.out.println("로그인 화면으로 포워드");
 	}
 	
-	@GetMapping("login")
+	@PostMapping("login")
 	public String loginProcess(String id, String password, RedirectAttributes rttr) {
 		
 		System.out.println("로그인 처리 !!");
