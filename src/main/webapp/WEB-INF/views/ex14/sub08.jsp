@@ -12,6 +12,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>이름 : ${name }</h1>
+	<h1>고객 목록</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NAME1</th>
+					<th>NAME2</th>
+					<th>ADDRESS</th>
+					<th>CITY</th>
+					<th>POST</th>
+					<th>COUNTRY</th>
+				</tr>
+			</thead>
+			<tbody>
+			<c:forEach items="${customers }" var="cus">
+				<tr>
+					<td>${cus.id }</td>
+					<td>${cus.customerName }</td>
+					<td>${cus.contactName }</td>
+					<td>${cus.address }</td>
+					<td>${cus.city }</td>
+					<td>${cus.postalCode }</td>
+					<td>${cus.country }</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+		</table>
 </body>
 </html>

@@ -17,6 +17,7 @@
 	<form action = "${pageContext.request.contextPath }/ex14/sub06" method="post">
 		성: <input type = "text" name="firstName" value="KIM" /> <br />
 		이름: <input type = "text" name="lastName" value="JAEHOON" /> <br />
+		생일: <input type ="date"  name="birthDate" value="1998-11-06"/> <br />
 		사진: <input type = "text" name="photo" value="a.pic" /> <br />
 		기록: <input type = "text" name="notes" value="KIM is a King" /> <br />
 		<button>등록</button>
